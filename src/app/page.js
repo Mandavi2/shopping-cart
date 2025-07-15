@@ -6,7 +6,7 @@ import { useCart } from '@/context/cartContext'
 import ShoppingCart from '@/components/ShoppingCart'
 import { getItemFromStorage, getParsedItemFromStorage } from '@/utilities/LocalStorageFns'
 
-const page = () => {
+const Page = () => {
   const {allItems, setItems, setCartItemsFromStorage} = useCart();
 
   useEffect(()=>{
@@ -36,4 +36,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
